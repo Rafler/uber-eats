@@ -4,3 +4,157 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin center-position_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-style {
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-decoration: none;
+  margin-right: 15px;
+  border: 1px solid black;
+  width: 80px;
+  a {
+    text-align: center;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+  }
+  &:hover {
+    border: 1px solid #49a144;
+  }
+  &:hover a {
+    color: #49a144;
+  }
+}
+
+@mixin  select-correct {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+@mixin input-form {
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 40px;
+}
+
+@mixin placeholder-decoration {
+  input[placeholder] {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #1d1d1d;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #1d1d1d;
+  }
+  input::-moz-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #1d1d1d;
+  }
+  input:-moz-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #1d1d1d;
+  }
+  input:-ms-input-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #1d1d1d;
+  }
+}
+
+@mixin drop-down_list {
+  .dropdown {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .chosen {
+    margin-left: 20%;
+  }
+
+  &,
+  li {
+    color: #fff;
+    background: #3b3b3b;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li a,
+  & a {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    margin-left: 5px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  & ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  li:hover {
+    background: #49a144;
+    cursor: pointer;
+  }
+
+  & ul {
+    top: 40px;
+    background: #3b3b3b;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+  }
+
+  &:hover > ul,
+  &:focus-within > ul,
+  & ul:hover {
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+}
+
+@mixin social-hover {
+  h4 a img {
+    transition: transform 0.1ms ease;
+  }
+
+  h4 a img:hover {
+    transform: scale(1.5);
+  }
+}
