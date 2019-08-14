@@ -46,6 +46,7 @@ header {
 .header-menu {
   position: relative;
   width: auto;
+  height: 72px;
   @include center-position_flex;
   justify-content: space-around;
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
@@ -64,6 +65,10 @@ header {
 
 .uber-logo {
   margin: 30px 3% 30px 1% ;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .header-logo {
@@ -73,6 +78,11 @@ header {
 .when-and-where {
   @include center-position_flex;
   margin-right: 10%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   @media screen and (min-width: 320px) and (max-width: 639px) {
     & {
       display: none;
@@ -102,7 +112,6 @@ header {
 .where {
   position: relative;
   min-width: 290px;
-  width: 25%;
   @include center-position_flex;
   @include input-form;
   @include placeholder-decoration;
@@ -129,6 +138,10 @@ header {
 
 .buttons-and-basket {
   @include center-position_flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
   button {
     @include button-style;
     height: 40px;
@@ -198,8 +211,14 @@ main {
   display: flex;
   justify-content: center;
   margin: 30px auto 0;
-  width: 85%;
+  width: 83.5%;
   height: 50px;
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    & {
+      width: 62.5%;
+      min-width: 300px;
+    }
+  }
 }
 
 .search-form__label {
@@ -216,11 +235,9 @@ main {
 }
 
 .search-form__input {
+  @include placeholder-decoration;
   width: 100%;
   height: 90%;
-  color: #3d4e61;
-  font-weight: 300;
-  font-family: Roboto, sans-serif;
   outline: none;
   padding-left: 5px;
   border: 0;
@@ -233,21 +250,28 @@ main {
 }
 
 .headline {
-  margin: 55px 8.25% 20px ;
+  margin: 55px auto 20px ;
   font-size: 22px;
+  width: 83.5%;
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    & {
+      width: 62.5%;
+      min-width: 300px;
+    }
+  }
 }
 
 .card-list {
   margin: 15px 8.25% 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(275px,1fr));
-  grid-template-rows: repeat(3, minmax(365px,1fr));
+  grid-template-rows: repeat(3, minmax(400px,1fr));
   grid-gap: 15px;
   justify-content: center;
   @media screen and (min-width: 320px) and (max-width: 639px) {
     & {
       grid-template-columns: repeat(1, minmax(275px, 400px));
-      grid-template-rows: repeat(9, minmax(365px,1fr));
+      grid-template-rows: repeat(9, minmax(400px,1fr));
       margin-left: 2.5%;
       margin-right: 2.5%;
     }
@@ -255,7 +279,7 @@ main {
   @media screen and (min-width: 640px) and (max-width:1023px) {
     & {
       grid-template-columns: repeat(2, minmax(275px,1fr));
-      grid-template-rows: repeat(5, minmax(365px,1fr));
+      grid-template-rows: repeat(5, minmax(400px,1fr));
     }
   }
 }
@@ -501,7 +525,7 @@ main {
 .to-start-of-page {
   background-color: #59bd5a;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   height: 80px;
   width: 80px;
   bottom: 5%;
@@ -532,8 +556,10 @@ main {
   @media screen and (min-width: 320px) and (max-width: 639px) {
     & {
       display: flex;
-      margin: 40px 2.5%;
+      width: 62.5%;
+      margin: 40px auto;
       justify-content: center;
+      min-width: 300px;
     }
     .when {
       margin-right: 15px;
@@ -545,4 +571,8 @@ main {
   margin-bottom: 8px;
   color: #626262;
   font-size: 11px;
+}
+
+.where-form_mobile {
+  width: 100%;
 }
