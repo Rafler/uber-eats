@@ -73,6 +73,11 @@ header {
 
 .header-logo {
   width: 120px;
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    & {
+      width: 100px;
+    }
+  }
 }
 
 .when-and-where {
@@ -145,9 +150,10 @@ header {
   button {
     @include button-style;
     height: 40px;
-    @media screen and (min-width: 320px) and (max-width: 639px) {
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
       & {
-        margin-right: 2.5%;
+        margin-right: 2%;
+        width: 70px;
       }
     }
   }
@@ -270,10 +276,8 @@ main {
   justify-content: center;
   @media screen and (min-width: 320px) and (max-width: 639px) {
     & {
-      grid-template-columns: repeat(1, minmax(275px, 400px));
+      grid-template-columns: repeat(1, minmax(300px, 75%));
       grid-template-rows: repeat(9, minmax(400px,1fr));
-      margin-left: 2.5%;
-      margin-right: 2.5%;
     }
   }
   @media screen and (min-width: 640px) and (max-width:1023px) {
