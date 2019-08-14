@@ -42,6 +42,7 @@ header {
 .header-menu {
   position: relative;
   width: auto;
+  height: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +69,11 @@ header {
               justify-content: space-between; } }
 
 .uber-logo {
-  margin: 30px 3% 30px 1%; }
+  margin: 30px 3% 30px 1%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; }
 
 .header-logo {
   width: 120px; }
@@ -83,7 +88,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 10%; }
+  margin-right: 10%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .when-and-where {
       display: none; } }
@@ -107,28 +117,23 @@ header {
   .when input[placeholder] {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .when input::-webkit-input-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .when input::-moz-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .when input:-moz-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .when input:-ms-input-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
 
 .to {
   margin: auto 10px;
@@ -143,7 +148,6 @@ header {
 .where {
   position: relative;
   min-width: 290px;
-  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,28 +165,23 @@ header {
   .where input[placeholder] {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .where input::-webkit-input-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .where input::-moz-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .where input:-moz-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .where input:-ms-input-placeholder {
     font-size: 16px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: #1d1d1d; }
+    font-weight: 400; }
   .where img {
     position: absolute;
     right: 0;
@@ -207,7 +206,11 @@ header {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; }
   .buttons-and-basket button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -300,8 +303,12 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px auto 0;
-  width: 85%;
+  width: 83.5%;
   height: 50px; }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    .search-form {
+      width: 62.5%;
+      min-width: 300px; } }
 
 .search-form__label {
   position: relative;
@@ -327,27 +334,49 @@ main {
 .search-form__input {
   width: 100%;
   height: 90%;
-  color: #3d4e61;
-  font-weight: 300;
-  font-family: Roboto, sans-serif;
   outline: none;
   padding-left: 5px;
   border: 0;
   font-size: 16px; }
+  .search-form__input input[placeholder] {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400; }
+  .search-form__input input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400; }
+  .search-form__input input::-moz-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400; }
+  .search-form__input input:-moz-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400; }
+  .search-form__input input:-ms-input-placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400; }
 
 .search-form_logo {
   width: 15px;
   margin: 0 auto; }
 
 .headline {
-  margin: 55px 8.25% 20px;
-  font-size: 22px; }
+  margin: 55px auto 20px;
+  font-size: 22px;
+  width: 83.5%; }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    .headline {
+      width: 62.5%;
+      min-width: 300px; } }
 
 .card-list {
   margin: 15px 8.25% 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(275px, 1fr));
-  grid-template-rows: repeat(3, minmax(365px, 1fr));
+  grid-template-rows: repeat(3, minmax(400px, 1fr));
   grid-gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -355,13 +384,13 @@ main {
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .card-list {
       grid-template-columns: repeat(1, minmax(275px, 400px));
-      grid-template-rows: repeat(9, minmax(365px, 1fr));
+      grid-template-rows: repeat(9, minmax(400px, 1fr));
       margin-left: 2.5%;
       margin-right: 2.5%; } }
   @media screen and (min-width: 640px) and (max-width: 1023px) {
     .card-list {
       grid-template-columns: repeat(2, minmax(275px, 1fr));
-      grid-template-rows: repeat(5, minmax(365px, 1fr)); } }
+      grid-template-rows: repeat(5, minmax(400px, 1fr)); } }
 
 .card {
   max-width: 400px;
@@ -686,7 +715,7 @@ main {
 .to-start-of-page {
   background-color: #59bd5a;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   height: 80px;
   width: 80px;
   bottom: 5%;
@@ -717,10 +746,12 @@ main {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin: 40px 2.5%;
+      width: 62.5%;
+      margin: 40px auto;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      min-width: 300px; }
     .mobile-when-and-where .when {
       margin-right: 15px; } }
 
@@ -728,5 +759,8 @@ main {
   margin-bottom: 8px;
   color: #626262;
   font-size: 11px; }
+
+.where-form_mobile {
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
