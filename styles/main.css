@@ -57,16 +57,6 @@ header {
   -webkit-box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
           box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
   background-color: #fff; }
-  @media screen and (min-width: 640px) and (max-width: 1023px) {
-    .header-menu {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
-  @media screen and (min-width: 320px) and (max-width: 639px) {
-    .header-menu {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; } }
 
 .uber-logo {
   margin: 30px 3% 30px 1%;
@@ -293,6 +283,38 @@ header {
     color: white;
     font-size: 13px; }
 
+.mobile-when-and-where {
+  display: none; }
+  @media screen and (min-width: 320px) and (max-width: 639px) {
+    .mobile-when-and-where {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 98%;
+      margin: 40px auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      min-width: 300px; }
+    .mobile-when-and-where .when {
+      margin-right: 15px; } }
+
+.label {
+  margin-bottom: 8px;
+  color: #626262;
+  font-size: 11px; }
+
+.where-form_mobile {
+  width: 100%; }
+
+.header-block {
+  width: 85%;
+  position: relative;
+  height: 100%; }
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    .header-block {
+      width: 100%; } }
+
 main {
   width: auto;
   z-index: 0;
@@ -307,11 +329,11 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px auto 0;
-  width: 83.5%;
+  width: 85%;
   height: 50px; }
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .search-form {
-      width: 62.5%;
+      width: 98%;
       min-width: 300px; } }
 
 .search-form__label {
@@ -370,32 +392,34 @@ main {
 .headline {
   margin: 55px auto 20px;
   font-size: 22px;
-  width: 83.5%; }
+  width: 85%; }
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .headline {
-      width: 62.5%;
+      width: 98%;
       min-width: 300px; } }
 
 .card-list {
-  margin: 15px 8.25% 0;
+  margin: 15px 1% 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(275px, 1fr));
-  grid-template-rows: repeat(3, minmax(400px, 1fr));
-  grid-gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  grid-template-columns: repeat(3, 28%);
+  grid-template-rows: repeat(3, minmax(400px, 1fr));
+  grid-gap: 15px; }
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .card-list {
-      grid-template-columns: repeat(1, minmax(300px, 75%));
-      grid-template-rows: repeat(9, minmax(400px, 1fr)); } }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      grid-template-columns: repeat(1, minmax(300px, 98%));
+      grid-template-rows: repeat(9, minmax(400px, 550px)); } }
   @media screen and (min-width: 640px) and (max-width: 1023px) {
     .card-list {
-      grid-template-columns: repeat(2, minmax(275px, 1fr));
-      grid-template-rows: repeat(5, minmax(400px, 1fr)); } }
+      grid-template-columns: repeat(2, minmax(45%, 1fr));
+      grid-template-rows: repeat(5, minmax(400px, 500px)); } }
 
 .card {
-  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,6 +485,9 @@ main {
 
 .uber-logo_white {
   margin: 40px auto 40px 8.25%; }
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    .uber-logo_white {
+      margin-left: 2%; } }
 
 .line {
   opacity: 0.4;
@@ -468,9 +495,9 @@ main {
   height: 1px;
   width: 83.5%;
   border: 0; }
-  @media screen and (min-width: 320px) and (max-width: 639px) {
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
     .line {
-      width: 95%; } }
+      width: 98%; } }
 
 .footer-menu {
   scroll-behavior: smooth;
@@ -501,7 +528,7 @@ main {
           -ms-flex-align: start;
               align-items: flex-start;
       min-height: 490px;
-      margin-left: 2.5%;
+      margin-left: 2%;
       margin-right: 0; }
       .footer-menu .footer-block {
         width: 100%; }
@@ -509,6 +536,9 @@ main {
         margin-right: 0; }
       .footer-menu .footer-menu_first {
         margin-top: 40px; } }
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    .footer-menu {
+      margin-left: 2%; } }
 
 .footer-block {
   width: 25%;
@@ -712,7 +742,13 @@ main {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      margin-left: 2.5%; } }
+      margin-left: 2%; } }
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    .rules-block {
+      margin-left: 2%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .to-start-of-page {
   background-color: #59bd5a;
@@ -720,8 +756,8 @@ main {
   position: absolute;
   height: 80px;
   width: 80px;
-  bottom: 5%;
-  right: 10%; }
+  bottom: 3%;
+  right: 3%; }
   .to-start-of-page a {
     position: absolute;
     width: 100%;
@@ -740,29 +776,5 @@ main {
   right: 0;
   top: 0;
   bottom: 0; }
-
-.mobile-when-and-where {
-  display: none; }
-  @media screen and (min-width: 320px) and (max-width: 639px) {
-    .mobile-when-and-where {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 62.5%;
-      margin: 40px auto;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      min-width: 300px; }
-    .mobile-when-and-where .when {
-      margin-right: 15px; } }
-
-.label {
-  margin-bottom: 8px;
-  color: #626262;
-  font-size: 11px; }
-
-.where-form_mobile {
-  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
