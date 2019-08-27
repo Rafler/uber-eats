@@ -12,21 +12,20 @@
 }
 
 @mixin button-style {
+  height: 40px;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+  font-size: 13px;
   box-sizing: border-box;
   border-radius: 2px;
   text-decoration: none;
   margin-right: 15px;
   border: 1px solid black;
   width: 80px;
-  a {
-    text-align: center;
-    transition: all 0.5s ease;
-    white-space: nowrap;
-  }
+  white-space: nowrap;
   &:hover {
     border: 1px solid #49a144;
-  }
-  &:hover a {
     color: #49a144;
   }
 }
