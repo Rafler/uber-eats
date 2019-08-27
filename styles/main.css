@@ -59,7 +59,8 @@ header {
   background-color: #fff; }
 
 .uber-logo {
-  margin: 30px 3% 30px 1%;
+  cursor: pointer;
+  margin: 30px 3% 30px 0;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -140,9 +141,13 @@ header {
 
 .where {
   position: relative;
-  min-width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  min-width: 290px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -176,16 +181,13 @@ header {
     font-family: Roboto, sans-serif;
     font-weight: 400; }
   .where img {
-    position: absolute;
-    right: 0;
-    left: 0;
     margin: auto 12px;
     width: 12px; }
   .where input {
-    position: absolute;
     border: 0;
     outline: none;
-    width: 70%; }
+    width: 100%;
+    margin-right: 10%; }
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     .where {
       min-width: 215px; } }
@@ -205,6 +207,20 @@ header {
   bottom: 0;
   right: 0; }
   .buttons-and-basket button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 2px;
@@ -212,15 +228,11 @@ header {
     margin-right: 15px;
     border: 1px solid black;
     width: 80px;
-    height: 40px; }
-    .buttons-and-basket button a {
-      text-align: center;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      white-space: nowrap; }
+    white-space: nowrap;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
     .buttons-and-basket button:hover {
-      border: 1px solid #49a144; }
-    .buttons-and-basket button:hover a {
+      border: 1px solid #49a144;
       color: #49a144; }
     @media screen and (min-width: 320px) and (max-width: 1023px) {
       .buttons-and-basket button {
@@ -234,54 +246,16 @@ header {
       display: none; } }
 
 .sign-in {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
   background-color: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  color: black; }
   .sign-in:hover {
     background-color: black; }
-  .sign-in a {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    color: black;
-    font-size: 13px; }
 
 .registration {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
   background-color: black;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  color: white; }
   .registration:hover {
     background-color: #fff; }
-  .registration a {
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 13px; }
 
 .mobile-when-and-where {
   display: none; }
@@ -313,7 +287,7 @@ header {
   height: 100%; }
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     .header-block {
-      width: 100%; } }
+      width: 98%; } }
 
 main {
   width: auto;
@@ -358,6 +332,7 @@ main {
             box-shadow: 0 3px 5px rgba(61, 78, 97, 0.2); }
 
 .search-form__input {
+  margin-right: 7%;
   width: 100%;
   height: 90%;
   outline: none;
@@ -399,23 +374,23 @@ main {
       min-width: 300px; } }
 
 .card-list {
-  margin: 15px 1% 0;
+  margin: 15px auto 0;
+  width: 85%;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-template-columns: repeat(3, 28%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-template-columns: repeat(3, minmax(300px, 550px));
   grid-template-rows: repeat(3, minmax(400px, 1fr));
   grid-gap: 15px; }
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .card-list {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      width: 98%;
       grid-template-columns: repeat(1, minmax(300px, 98%));
       grid-template-rows: repeat(9, minmax(400px, 550px)); } }
   @media screen and (min-width: 640px) and (max-width: 1023px) {
     .card-list {
+      width: 98%;
       grid-template-columns: repeat(2, minmax(45%, 1fr));
       grid-template-rows: repeat(5, minmax(400px, 500px)); } }
 
@@ -484,6 +459,7 @@ main {
   width: 190px; }
 
 .uber-logo_white {
+  cursor: pointer;
   margin: 40px auto 40px 8.25%; }
   @media screen and (min-width: 320px) and (max-width: 1023px) {
     .uber-logo_white {
@@ -502,7 +478,7 @@ main {
 .footer-menu {
   scroll-behavior: smooth;
   position: relative;
-  width: auto;
+  width: 85%;
   height: 185px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,13 +487,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 35px 0 auto 8.25%; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px auto auto; }
   @media screen and (min-width: 320px) and (max-width: 639px) {
     .footer-menu {
       -webkit-box-orient: vertical;
@@ -528,8 +504,7 @@ main {
           -ms-flex-align: start;
               align-items: flex-start;
       min-height: 490px;
-      margin-left: 2%;
-      margin-right: 0; }
+      width: 98%; }
       .footer-menu .footer-block {
         width: 100%; }
       .footer-menu div {
@@ -538,11 +513,20 @@ main {
         margin-top: 40px; } }
   @media screen and (min-width: 640px) and (max-width: 1023px) {
     .footer-menu {
-      margin-left: 2%; } }
+      width: 98%; } }
 
 .footer-block {
-  width: 25%;
+  width: 33%;
   margin-right: 40px; }
+
+.language-and-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .lang-form {
   min-width: 170px;
@@ -558,7 +542,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: #3b3b3b;
-  margin-bottom: 35px; }
+  margin-bottom: 30px; }
   .lang-form .dropdown {
     margin: 0;
     position: absolute;
@@ -648,7 +632,9 @@ main {
 .hash-uber {
   color: white;
   font-size: 16px;
-  margin: 25px 0; }
+  margin-bottom: 25px;
+  text-align: left;
+  height: 16px; }
   .hash-uber span {
     color: #49a144; }
   @media screen and (min-width: 320px) and (max-width: 639px) {

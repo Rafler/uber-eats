@@ -9,283 +9,288 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-  <header>
-    <div class="header-menu">
-      <div class="header-block">
-        <h1 class="uber-logo">
-          <a href="#">
-            <img src="images/logo-header.png" alt="ubereats logo"  class="header-logo">
-          </a>
-        </h1>
-        <div class="when-and-where">
-          <form>
-            <label class="when">
-              <input
-                class="on-time"
-                placeholder="ASAP"
-                type="text"
-                name="when">
-            </label>
-          </form>
-          <p class="to text-light">to</p>
-          <form class="where">
-            <label class="where">
-              <img src="images/place.png" alt="place">
-              <input
-                placeholder="ul. Tarasivska St, 16"
-                type="text"
-                name="where">
-            </label>
-          </form>
-        </div>
-        <div class="buttons-and-basket">
-          <button class="sign-in text-medium">
-            <a href="#">Sign In</a>
-          </button>
-          <button class="registration text-medium">
-            <a href="#">Register</a>
-          </button>
-          <h2>
+    <header>
+      <div class="header-menu">
+        <div class="header-block">
+          <h1 class="uber-logo">
             <a href="#">
-              <img src="images/basket.png" alt="basket"  class="basket">
+              <img src="images/logo-header.png" alt="ubereats logo"  class="header-logo">
             </a>
-          </h2>
+          </h1>
+          <div class="when-and-where">
+            <form>
+              <label class="when">
+                <input
+                  class="on-time"
+                  placeholder="ASAP"
+                  type="text"
+                  name="when"
+                >
+              </label>
+            </form>
+            <p class="to text-light">to</p>
+            <form>
+              <label class="where">
+                <img src="images/place.png" alt="place">
+                <input
+                  placeholder="ul. Tarasivska St, 16"
+                  type="text"
+                  name="where"
+                >
+              </label>
+            </form>
+          </div>
+          <div class="buttons-and-basket">
+            <button class="sign-in text-medium">
+              Sign In
+            </button>
+            <button class="registration text-medium">
+              Register
+            </button>
+            <div>
+              <a href="#">
+                <img src="images/basket.png" alt="basket"  class="basket">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <form class="search-form ">
-      <label class="search-form__label">
-        <img src="images/Search.png" alt="search" class="search-form_logo">
-        <input
-          class="search-form__input text-normal"
-          type="text"
-          placeholder="Search for restaurant or cusine">
-      </label>
-    </form>
-    <div class="mobile-when-and-where">
-      <form>
-        <label
-          class="label text-normal"
-          for="when">When</label>
-        <label class="when">
+      <form class="search-form ">
+        <label class="search-form__label">
+          <img src="images/Search.png" alt="search" class="search-form_logo">
           <input
-            class="on-time"
-            placeholder="ASAP"
+            class="search-form__input text-normal"
             type="text"
-            name="when"
-            id="when">
+            placeholder="Search for restaurant or cusine"
+          >
         </label>
       </form>
-      <form class="where-form_mobile">
-        <label
-          class="label  text-normal"
-          for="to">To</label>
-        <label class="where">
-          <img src="images/place.png" alt="place">
-          <input
-            placeholder="ul. Tarasivska St, 16"
-            type="text"
-            name="where"
-            id="to">
-        </label>
-      </form>
-    </div>
-  </header>
-  <main>
-    <h2 class="headline text-normal">Kyiv Restaurants</h2>
-    <div class="card-list">
-      <div class="card">
-        <a href="#">
-          <img src="images/MC.png" alt="Mc'Donald's photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">Макдональдс</h3>
-            <p class="text-normal describe">&#8372;&#8372; • Бургери</p>
-            <p class="text-normal delivery-time">25 - 35 Min</p>
+      <div class="mobile-when-and-where">
+        <form>
+          <div class="label text-normal">
+            When
           </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/WOKEI.png" alt="WOKWEI photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">WOKWEI</h3>
-            <p class="text-normal describe">&#8372; • Китайська • Азіатська</p>
-            <p class="text-normal delivery-time">40-50 Min</p>
+          <label class="when">
+            <input
+              class="on-time"
+              placeholder="ASAP"
+              type="text"
+              name="when"
+              id="when"
+            >
+          </label>
+        </form>
+        <form class="where-form_mobile">
+          <div class="label  text-normal">
+            To
           </div>
-        </a>
+          <label class="where">
+            <img src="images/place.png" alt="place">
+            <input
+              placeholder="ul. Tarasivska St, 16"
+              type="text"
+              name="where"
+              id="to"
+            >
+          </label>
+        </form>
       </div>
-      <div class="card">
+    </header>
+    <main>
+      <h2 class="headline text-normal">Kyiv Restaurants</h2>
+      <div class="card-list">
+        <div class="card">
+          <a href="#">
+            <img src="images/MC.png" alt="McDonald's photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">Макдональдс</h3>
+              <p class="text-normal describe">&#8372;&#8372; • Бургери</p>
+              <p class="text-normal delivery-time">25 - 35 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/WOKEI.png" alt="WOKWEI photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">WOKWEI</h3>
+              <p class="text-normal describe">&#8372; • Китайська • Азіатська</p>
+              <p class="text-normal delivery-time">40-50 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/YIZHA.png" alt="YIZHA photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">YIZHA</h3>
+              <p class="text-normal describe">&#8372;&#8372; • Американська • Бургери • Вулична їжа</p>
+              <p class="text-normal delivery-time">35-45 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/Musafir.png" alt="Musafir photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">Musafir (вул. Саксаганського)</h3>
+              <p class=" describe text-normal">&#8372;&#8372; • Близькосхідна</p>
+              <p class="text-normal delivery-time">30 - 40 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/WOKWEI2.png" alt="WOKWEI photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">WOKWEI</h3>
+              <p class="text-normal describe">&#8372; • Китайська • Азіатська</p>
+              <p class="text-normal delivery-time">40-50 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/Milk-Bar.png" alt="Milk Bar photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">Milk Bar</h3>
+              <p class="text-normal describe">&#8372;&#8372; • Десерти • Європейська</p>
+              <p class="text-normal delivery-time">25 - 35 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/Brooklyn-Pizza.png" alt="Mimosa Brooklyn Pizza photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">Mimosa Brooklyn Pizza</h3>
+              <p class="text-normal describe">&#8372;&#8372; • Італійська • Піца • Американська</p>
+              <p class="text-normal delivery-time">15-25 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/To-Be.png" alt="To Be photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">To Be</h3>
+              <p class="text-normal describe">&#8372;&#8372; • Японська • Азіатська • Суші</p>
+              <p class="text-normal delivery-time">25 - 35 Min</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="images/Druzi.png" alt="Druzi Cafe photo" class="restaurant-photo">
+            <div class="info-box">
+              <h3 class="restaurant-name text-normal">Druzi Cafe (вул. Прорізна)</h3>
+              <p class="text-normal describe">&#8372;&#8372; • Американська • Сучасна європейська</p>
+              <p class="text-normal delivery-time">30 - 40 Min</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h2 class="uber-logo_white">
         <a href="#">
-          <img src="images/YIZHA.png" alt="YIZHA photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">YIZHA</h3>
-            <p class="text-normal describe">&#8372;&#8372; • Американська • Бургери • Вулична їжа</p>
-            <p class="text-normal delivery-time">35-45 Min</p>
-          </div>
+          <img src="images/white-logo.png" alt="ubereats logo"  class="footer-logo">
         </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/Musafir.png" alt="Musafir photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">Musafir (вул. Саксаганського)</h3>
-            <p class=" describe text-normal">&#8372;&#8372; • Близькосхідна</p>
-            <p class="text-normal delivery-time">30 - 40 Min</p>
+      </h2>
+      <hr class="line">
+      <div class="footer-menu">
+        <div class="language-and-networks footer-block">
+          <div class="lang-form">
+            <img src="images/global.svg" alt="choose language icon" class="global">
+            <a class="chosen">English</a>
+            <ul class="dropdown">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Українська</a></li>
+              <li><a href="#">Русcкий</a></li>
+            </ul>
+            <img src="images/arrow.svg" alt="arrow icon" class="arrow">
           </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/WOKWEI2.png" alt="WOKWEI photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">WOKWEI</h3>
-            <p class="text-normal describe">&#8372; • Китайська • Азіатська</p>
-            <p class="text-normal delivery-time">40-50 Min</p>
+          <div class="networks">
+            <div class="hash-uber text-normal"><span>#</span>UberEats</div>
+            <div class="network-block">
+              <h4>
+                <a href="https://www.facebook.com/UberEats/">
+                  <img src="images/facebook.svg" alt="facebook link">
+                </a>
+              </h4>
+              <h4>
+                <a href="https://twitter.com/ubereats">
+                  <img src="images/twitter.svg" alt="twitter link">
+                </a>
+              </h4>
+              <h4>
+                <a href="https://www.instagram.com/ubereats/">
+                  <img src="images/instagram.svg" alt="instagram link">
+                </a>
+              </h4>
+            </div>
           </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/Milk-Bar.png" alt="Milk Bar photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">Milk Bar</h3>
-            <p class="text-normal describe">&#8372;&#8372; • Десерти • Європейська</p>
-            <p class="text-normal delivery-time">25 - 35 Min</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/Brooklyn-Pizza.png" alt="Mimosa Brooklyn Pizza photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">Mimosa Brooklyn Pizza</h3>
-            <p class="text-normal describe">&#8372;&#8372; • Італійська • Піца • Американська</p>
-            <p class="text-normal delivery-time">15-25 Min</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/To-Be.png" alt="To Be photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">To Be</h3>
-            <p class="text-normal describe">&#8372;&#8372; • Японська • Азіатська • Суші</p>
-            <p class="text-normal delivery-time">25 - 35 Min</p>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <img src="images/Druzi.png" alt="Druzi Cafe photo" class="restaurant-photo">
-          <div class="info-box">
-            <h3 class="restaurant-name text-normal">Druzi Cafe (вул. Прорізна)</h3>
-            <p class="text-normal describe">&#8372;&#8372; • Американська • Сучасна європейська</p>
-            <p class="text-normal delivery-time">30 - 40 Min</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <h2 class="uber-logo_white">
-      <a href="#">
-        <img src="images/white-logo.png" alt="ubereats logo"  class="footer-logo">
-      </a>
-    </h2>
-    <hr class="line">
-    <div class="footer-menu">
-      <div class="language-and-networks footer-block">
-        <div class="lang-form">
-          <img src="images/global.svg" alt="choose language icon" class="global">
-          <a class="chosen">English</a>
-          <ul class="dropdown">
-            <li><a href="#">English</a></li>
-            <li><a href="#">Українська</a></li>
-            <li><a href="#">Русcкий</a></li>
+        </div>
+        <div class="footer-menu_first footer-block">
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link text-normal">About UberEats</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link text-normal">Become a Delivery Partner</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link text-normal">Become a Restaurant Partner</a>
+            </li>
           </ul>
-          <img src="images/arrow.svg" alt="arrow icon" class="arrow">
         </div>
-        <div class="networks">
-          <p class="hash-uber text-normal"><span>#</span>UberEats</p>
-          <div class="network-block">
-            <h4>
-              <a href="https://www.facebook.com/UberEats/">
-                <img src="images/facebook.svg" alt="facebook link">
-              </a>
-            </h4>
-            <h4>
-              <a href="https://twitter.com/ubereats">
-                <img src="images/twitter.svg" alt="twitter link">
-              </a>
-            </h4>
-            <h4>
-              <a href="https://www.instagram.com/ubereats/">
-                <img src="images/instagram.svg" alt="instagram link">
-              </a>
-            </h4>
-          </div>
+        <div class="footer-menu_second footer-block">
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-link text-normal">See all cities</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link text-normal">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link text-normal">Help</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link text-normal">FAQs</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-menu_first footer-block">
-        <ul class="footer-list">
+      <hr class="line">
+      <div class="mobile-link_menu">
+        <button class="button-mobile_app">
+          <a href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">
+            <img src="images/app-store.svg" alt="app store link">
+          </a>
+        </button>
+        <button class="button-mobile_app">
+          <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats">
+            <img src="images/google-play.svg" alt="google play link">
+          </a>
+        </button>
+      </div>
+      <hr class="line">
+      <div class="footer-rules">
+        <ul class="rules-block">
+          <li class="text-normal">© 2017 Uber Technologies.Inc</li>
           <li>
-            <a href="#" class="footer-link text-normal">About UberEats</a>
+            <a href="#" class="text-normal footer-link">Privacy</a>
           </li>
           <li>
-            <a href="#" class="footer-link text-normal">Become a Delivery Partner</a>
-          </li>
-          <li>
-            <a href="#" class="footer-link text-normal">Become a Restaurant Partner</a>
+            <a href="#" class="text-normal footer-link">Terms</a>
           </li>
         </ul>
       </div>
-      <div class="footer-menu_second footer-block">
-        <ul class="footer-list">
-          <li>
-            <a href="#" class="footer-link text-normal">See all cities</a>
-          </li>
-          <li>
-            <a href="#" class="footer-link text-normal">Pricing</a>
-          </li>
-          <li>
-            <a href="#" class="footer-link text-normal">Help</a>
-          </li>
-          <li>
-            <a href="#" class="footer-link text-normal">FAQs</a>
-          </li>
-        </ul>
+      <div class="to-start-of-page">
+        <a href="#">
+          <img src="images/arrow-footer.png" alt="arrow icon" class="arrow-footer">
+        </a>
       </div>
-    </div>
-    <hr class="line">
-    <div class="mobile-link_menu">
-      <button class="button-mobile_app">
-        <a href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">
-          <img src="images/app-store.svg" alt="app store link">
-        </a>
-      </button>
-      <button class="button-mobile_app">
-        <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats">
-          <img src="images/google-play.svg" alt="google play link">
-        </a>
-      </button>
-    </div>
-    <hr class="line">
-    <div class="footer-rules">
-      <ul class="rules-block">
-        <li class="text-normal">© 2017 Uber Technologies.Inc</li>
-        <li>
-          <a href="#" class="text-normal footer-link">Privacy</a>
-        </li>
-        <li>
-          <a href="#" class="text-normal footer-link">Terms</a>
-        </li>
-      </ul>
-    </div>
-    <div class="to-start-of-page">
-      <a href="#">
-        <img src="images/arrow-footer.png" alt="arrow icon" class="arrow-footer">
-      </a>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
